@@ -1,12 +1,96 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>3D Globe</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Thiruvananthapuram</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            color: #fff;
+        }
+        header {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px 0;
+            text-align: center;
+            font-size: 1.5em;
+        }
+        nav {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ffeb3b;
+        }
+        .container {
+            padding: 20px;
+            text-align: center;
+        }
+        .hometown-intro {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            width: 80%;
+            transition: transform 0.3s;
+        }
+        .hometown-intro:hover {
+            transform: scale(1.05);
+        }
+        .hometown-intro h2 {
+            color: #ffeb3b;
+        }
+        .hometown-intro p {
+            line-height: 1.6;
+        }
+    </style>
 </head>
 <body>
-    <iframe 
-        src="https://earth.google.com/web/" 
-        width="100%" height="100vh" style="border:0;" allowfullscreen="">
-    </iframe>
+
+    <header>
+        <h1>Welcome to Thiruvananthapuram</h1>
+    </header>
+
+    <nav>
+        <a href="#kovalam">Kovalam</a>
+        <a href="#ponmudi">Ponmudi</a>
+        <a href="#padmanabhaswamy">Padmanabhaswamy Temple</a>
+        <a href="#varkala">Varkala</a>
+    </nav>
+
+    <div class="container">
+        <div id="kovalam" class="hometown-intro">
+            <h2>Kovalam</h2>
+            <p>Famous for its golden beaches and lighthouse, Kovalam is the perfect tropical getaway.</p>
+        </div>
+
+        <div id="ponmudi" class="hometown-intro">
+            <h2>Ponmudi</h2>
+            <p>A scenic hill station with winding roads, misty peaks, and lush greenery.</p>
+        </div>
+
+        <div id="padmanabhaswamy" class="hometown-intro">
+            <h2>Padmanabhaswamy Temple</h2>
+            <p>One of the richest temples in the world, showcasing stunning Dravidian architecture.</p>
+        </div>
+
+        <div id="varkala" class="hometown-intro">
+            <h2>Varkala</h2>
+            <p>Known for its unique cliffs, vibrant beach life, and spiritual charm.</p>
+        </div>
+    </div>
+
 </body>
 </html>
